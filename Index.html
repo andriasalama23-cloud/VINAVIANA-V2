@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>VINAVIANA PRO MAX V2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>⚽ VINAVIANA PRO MAX V2</h1>
+    <p>Smart Football Prediction System</p>
+  </header>
+
+  <nav>
+    <button onclick="showTab('home')">🏠 Accueil</button>
+    <button onclick="showTab('predict')">🔮 Vinavina</button>
+    <button onclick="showTab('matches')">📊 Matches</button>
+    <button onclick="showTab('history')">📜 Historique</button>
+  </nav>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="tab active">
+      <h2>Welcome 👋</h2>
+      <p>VINAVIANA Pro Max V2 — plateforme vinavina baolina kitra smart.</p>
+    </section>
+
+    <!-- PREDICTION -->
+    <section id="predict" class="tab">
+      <h2>🔮 Vinavina Match</h2>
+
+      <input type="text" placeholder="Equipe 1" id="teamA">
+      <input type="text" placeholder="Equipe 2" id="teamB">
+
+      <select id="mode">
+        <option>Normal</option>
+        <option>Pro Max</option>
+        <option>Defensive</option>
+        <option>Attaque</option>
+      </select>
+
+      <button onclick="predict()">Generate Prediction</button>
+
+      <div id="result"></div>
+    </section>
+
+    <!-- MATCHES -->
+    <section id="matches" class="tab">
+      <h2>📊 Matches Today</h2>
+      <p>Ato no ho ampiana API any aoriana</p>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="history" class="tab">
+      <h2>📜 History</h2>
+      <p>Vinavina taloha ho voatahiry eto</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
